@@ -1,0 +1,117 @@
+.goods{
+    width: 1200px;
+    height: 600px;
+    margin: 50px auto;
+}
+.goods div h1{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background: #fb3434;
+    border-radius: 12px;
+}
+.goods div img{
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    float: left;
+}
+.goods div h2{
+    width: 500px;
+    height: 50px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.goods div p{
+    width: 500px;
+    height: 80px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#btn{
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+#btn button{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: #fbf8f8;
+    border: 1px solid #f4f1f1;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+#btu button:hover{
+    background: #d1c5c5;
+}
+#btn .num{
+    width: 55px;
+    height: 48px;
+    border-top: 1px solid #f4f1f1;
+    border-bottom: 1px solid #f4f1f1;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    color: #333333;
+}
+.goods div .money{
+    width: 500px;
+    height: 30px;
+    float: left;
+    font-size: 24px;
+    color: #fb3434;
+    font-weight: 500;
+    margin: 10px 50px;
+}
+.goods div #addToCart{
+    width: 150px;
+    height: 40px;
+    float: left;
+    margin: 20px 50px;
+    font-size: 20px;
+    color: white;
+    background: #fb3434;
+    border: 1px solid #fb3434;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.goods div #addToCart:hover{
+    color: #fb3434;
+    background: white;
+    border: 1px solid #fb3434;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

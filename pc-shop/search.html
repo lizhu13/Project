@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <link rel="shortcut icon" href="images/logo1.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common1.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+<header>
+    <div id="top">
+        <a href="#">
+            <img src="images/top.jpg" alt="">
+        </a>
+    </div>
+    <nav>
+        <div class="yitao-top">
+            <div class="yitao-top-left">欢迎来到一淘网，阿里巴巴旗下生活省钱利器！</div>
+            <ul class="right-list">
+                <li class="login">
+                    <a href="login.html">亲，请登录</a>|
+                    <a href="register.html">免费注册</a>
+                </li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="cart.html">购物车</a></li>
+                <li><a href="order.html">我的订单</a></li>
+                <li><a href="#">收藏夹</a></li>
+                <li><a href="#">消息</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="yitao-header">
+        <div class="logo">
+            <a href="#"><img src="images/LOGO.png" alt=""></a>
+        </div>
+        <div class="container-box">
+            <div class="container">
+                <input type="text" class="search" id="search" placeholder="购物拿返利，手机下单更便捷">
+                <button class="searchGoods" id="searchGoods"><img src="images/search.png" alt=""></button>
+            </div>
+            <div class="container-goods">
+                <ul class="container-list">
+                    <li><a href="#">妈妈装</a></li>
+                    <li><a href="#">女T恤短袖</a></li>
+                    <li><a href="#">男外套</a></li>
+                    <li><a href="#">连衣裙</a></li>
+                    <li><a href="#">手机</a></li>
+                    <li><a href="#">雪纺衬衫</a></li>
+                    <li><a href="#">阔腿裤</a></li>
+                    <li><a href="#">女鞋</a></li>
+                    <li><a href="#">袜子</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="download">
+        </div>
+    </div>
+</header>
+<section>
+    <div id="first">
+        <ul id="firstUl">
+            <li><a href="index.html" class="border1">首页</a></li>
+            <li><a href="#" class="border2">品牌特卖</a></li>
+            <li><a href="#" class="border3">限时闪购</a></li>
+        </ul>
+    </div>
+    <!-- 商品分类 -->
+    <div  id="goodsList" class="second-nav fixd-nav">
+        <ul id="goodsListUl">
+
+        </ul>
+    </div>
+    <div id = 'shopping-info' class="shopping-info">
+        <div class="standard-img"><h1>搜索结果</h1></div>
+        <ul>
+
+        </ul>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <ul>关于我们
+                <li><a href="#">关于一淘</a></li>
+                <li><a href="#">法律声明</a></li>
+                <li><a href="#">诚聘英才</a></li>
+                <li><a href="#">廉正邮箱</a></li>
+            </ul>
+            <ul>帮助中心
+                <li><a href="#">新手指南</a></li>
+                <li><a href="#">关于会员</a></li>
+                <li><a href="#">关于返利</a></li>
+                <li><a href="#">关于集分宝</a></li>
+                <li><a href="#">关于会员特权</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </div>
+        <div class="footer-canter">
+            <h1>手机一淘</h1>
+            <a href="#"><img src="images/yitao.png" alt=""></a>
+        </div>
+        <div class="footer-right">
+            <ul>优惠地图
+                <li><a href="#"></a></li>
+                <li><a href="#">品牌特卖</a></li>
+                <li><a href="#">限时闪购</a></li>
+            </ul>
+            <ul>商家合作
+                <li><a href="#">报名入口</a></li>
+                <li><a href="#">商家端问题</a></li>
+            </ul>
+        </div>
+        <p>
+            <a href="#">阿里巴巴集团</a><a href="#">淘宝网</a><a href="#">天猫</a><a href="#">聚划算</a>
+            <a href="#">全球速卖通</a><a href="#">阿里巴巴国际交易市场</a><a href="#">1688</a><a href="#">阿里妈妈</a>
+            <a href="#">阿里旅行·去啊</a><a href="#">阿里云计算</a><a href="#">YunOS</a><a href="#">阿里通信</a>
+            <a href="#">万网</a><a href="#">高德</a><a href="#">优视</a><a href="#">友盟</a>
+            <a href="#">酷盘</a><a href="#">虾米</a><a href="#">天天动听</a><a href="#">来往</a>
+            <a href="#">钉钉</a><a href="#">11 Main</a><a href="#">支付宝</a>
+        </p>
+        <h6>Copyright © 2010-2017 ETAO.COM 版权所有</h6>
+        <h6>增值电信业务经营许可证：浙B2-20080224</h6>
+    </div>
+</footer>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/myajax.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common-list.js"></script>
+<script>
+
+    //接受location.search获取get传参的数据
+    var str = location.search.substr(1);
+    //用分割方法得到 等号= 两把的内容
+    var searchText = str.split("=");
+    //通过下标方式找到id的值
+
+    //			encodeURI() //编码   decodeURI() ：解码
+    var newText = decodeURI(searchText[1]);
+
+    var oUl1 = document.querySelector('#shopping-info');
+    var oUl2 = oUl1.querySelector('ul');
+
+    myajax.get('http://h6.duchengjiu.top/shop/api_goods.php',
+        {search_text: newText},
+        function(err,responseText){
+            var json = JSON.parse(responseText);
+            console.log(json);
+            var data = json.data;
+            for (var i = 0; i < data.length; i++) {
+                var obj = data[i];
+                oUl2.innerHTML += `<li>
+					<a href="search.html?goods_id=${obj.goods_id}">
+						<div><img src="${obj.goods_thumb}">
+						<em>${obj.goods_desc}</em></div>
+						<h2>${obj.goods_name}</h2>
+						<span>￥${obj.price}</span>
+						<p>仅剩：50件</p>
+					</a>
+				</li>`;
+            }
+        });
+
+
+
+</script>
+</body>
+</html>

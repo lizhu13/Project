@@ -1,0 +1,211 @@
+/*------------------------------信息选择-----------------------------------*/
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+main h1{
+    width: 1200px;
+    height: 40px;
+    margin: 15px 0;
+    font-size: 30px;
+    border-bottom: 2px solid #fb3434;
+}
+main > p{
+    width: 1190px;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px 0;
+    padding-left: 10px;
+    font-size: 25px;
+    float: left;
+    background: #fb3434;
+    color: white;
+}
+main input{
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin: 10px 5px 0 0;
+    background: #fb3434;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.address{
+    width: 1200px;
+    float: left;
+    margin-top: 20px;
+}
+.address .address-ul{
+    width: 1200px;
+    height: 60px;
+    overflow: hidden;
+}
+.address-ul > li{
+    width: 1200px;
+    height: 60px;
+    float: left;
+    background: #ccc;
+    padding-left: 20px;
+    line-height: 60px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid #fb3434;
+}
+.address-ul > li.selected{
+    border: 2px solid #14fb02;
+    background: white;
+    color: #fb3434;
+}
+.address-ul > li > span{
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-right: 30px;
+}
+.address-ul > li > .delete{
+    color: white;
+    font-size: 15px;
+    background: #ff730e;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+    float:right;
+    margin-top:15px;
+    line-height: 30px;
+    text-align: center;
+}
+.address-ul > li > .delete:hover{
+    background: #fb3434;
+    color: white;
+}
+.pull{
+    width: 1200px;
+    height: 150px;
+}
+.show-all-address {
+    background: #fb3434;
+    clear: both;
+    width: 100px;
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+}
+.show-all-address:hover {
+    background: #ff730e;
+    color: white;
+}
+.money{
+    width: 1200px;
+    height: 100px;
+}
+.money p{
+    width:1190px;
+    height: 40px;
+    font-size: 20px;
+    background: #fb3434;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #FFFFFF;
+    margin: 0;
+    float: left;
+}
+.money em{
+    float: left;
+    width: 110px;
+    height: 40px;
+    border: 2px solid transparent;
+    text-align: center;
+    line-height: 40px;
+    background: #ff730e;
+    margin: 25px 15px 0 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-style: normal;
+    border-radius: 6px;
+}
+#order{
+    float: right;
+    font-size: 22px;
+    background:#ff730e;
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin: 20px 0 50px 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+/*----------------------------信息填写------------------------------*/
+
+.modal{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 300px;
+    display: none;
+    background: #e1ffca;
+}
+.hd{
+    color: #fb3434;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.hd .close{
+    color: #fb3434;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+form{
+    padding-right: 10px;
+    padding-top: 15px;
+}
+label{
+    width: 550px;
+    float: left;
+    margin-left: 120px;
+    margin-bottom: 15px;
+}
+label input{
+    float: right;
+    width: 300px;
+    height: 20px;
+    margin-right: 130px;
+}
+.add{
+    width: 50px;
+    height: 30px;
+    background: #ff730e;
+    border: 0;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.add:hover{
+    background: #FC4200;
+}
+
+
+
+
+
+
+
+
+
+
+

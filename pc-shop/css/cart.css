@@ -1,0 +1,251 @@
+/* -------------------------------------头---------------------------------*/
+.shop{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.shop h1{
+    width: 1200px;
+    height: 50px;
+    background: #fb3434;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+.shop-list{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #fb3434;
+    margin-top: 20px;
+}
+.shop-list-check{
+    display: inline-block;
+    float: left;
+    width: 134px;
+    height: 100%;
+    color: #fb3434;
+}
+.shop-list-check input{
+    width: 17px;
+    height: 18px;
+    margin: 10px 7px 0 15px;
+    float: left;
+}
+.shop-list-check i{
+    width: 40px;
+    height: 18px;
+    float: left;
+    margin-top: 10px;
+    font-style: normal;
+}
+.shop-list-mas{
+    width: 422px;
+    height: 100%;
+    line-height: 36px;
+    display: inline-block;
+    float: left;
+    color: #fb3434;
+}
+.shop-list-one{
+    width: 147px;
+    height: 100%;
+    line-height: 36px;
+    display: inline-block;
+    float: left;
+    color: #fb3434;
+}
+.shop-list-s{
+    width: 147px;
+    height: 100%;
+    line-height: 36px;
+    display: inline-block;
+    float: left;
+    color: #fb3434;
+}
+.shop-list em{
+    width: 128px;
+    height: 100%;
+    line-height: 36px;
+    float: left;
+    color: #fb3434;
+}
+.shop-list span{
+    width: 107px;
+    height: 100%;
+    line-height: 36px;
+    float: left;
+    color: #fb3434;
+}
+/* -------------------------------------中---------------------------------*/
+.goods{
+    width: 1200px;
+    height: 121px;
+    border: 1px solid #fb3434;
+    margin-top: 40px;
+}
+.goods-box{
+    float: left;
+    width: 525px;
+    height: 100%;
+}
+.goods-box input{
+    width: 17px;
+    height: 18px;
+    float: left;
+    margin: 50px 7px 0 15px;
+}
+.goods-box img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: 20px;
+}
+.goods-box p{
+    width: 300px;
+    height: 50px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 17px;
+    color: black;
+    text-align: center;
+}
+.goods-one{
+    width: 108px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+    line-height: 80px;
+}
+.goods-lists{
+    width: 120px;
+    height: 80px;
+    float: left;
+    padding: 50px 20px 0 20px;
+    line-height: 80px;
+}
+.left-button{
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+    float: left;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.center-text{
+    width: 43px;
+    height: 20px;
+    float: left;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.right-button{
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+    float: left;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.goods-sum{
+    width: 108px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px 20px 0 10px;
+}
+.goods-op{
+    width: 85px;
+    height: 80px;
+    float: left;
+    padding: 50px 20px 0 31px;
+}
+.goods-op span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* -------------------------------------尾---------------------------------*/
+.shop-set{
+    width: 1200px;
+    border: 1px solid #fb3434;
+    margin: 40px auto;
+    background: white;
+}
+.shop-set span{
+    cursor: pointer;
+}
+.shop-set-box{
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+}
+.shop-set-box input{
+    width: 17px;
+    height: 18px;
+    margin: 12px 7px 0 15px;
+}
+.shop-set-box span{
+    line-height: 40px;
+    margin-left: 10px;
+}
+.shop-set-box-ri{
+    width: 585px;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.shop-set-box-ri a{
+    position: absolute;
+    width: 120px;
+    height: 61px;
+    background-color: #fb3434;
+    right: 0;
+    top:-10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.shop-set-box-ri a:hover{
+    text-decoration: underline;
+}
+.shop-set-box-ri-1{
+    text-align: right;
+    width: 445px;
+    line-height:30px;
+    height: 100%;
+    font-size: 20px;
+    position: relative;
+}
+.shop-set-box-ri-1 em{
+    font-size: 18px;
+    margin: 0 5px;
+    color: #fb3434;
+}
+.shop-set-box-ri-1 span{
+    font-size: 20px;
+}
+.shop-set-box-ri a{
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
