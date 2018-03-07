@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 设置ios系统下的顶部状态栏的背景颜色 -->
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <!-- 在ios系统中 如果出现类似于电话号码的数字 会出现蓝色的字  你想调节样式  忽略电话号码  = no  样式就没有了 这是你就可以设置了 -->
+  <meta content="telephone=no" name="format-detection">
+  <title>乐淘云购</title>
+  <!-- 1.引入的库 MUI-css文件 -->
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <!-- 2.引入字体图标库fontawesome -->
+  <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+  <!-- 3.引入公共样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <!-- 4.引入本页面的样式 -->
+  <link rel="stylesheet" href="./css/sort.css">
+  <!-- 5.引入标签上的图标 -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="lt-header mui-bar mui-bar-nav">
+    <!--  mui-plus-visible -->
+    <a class="fa fa-arrow-left mui-pull-left" href="javascript:history.back();"></a>
+    <a href="./search/search.html" class="fa fa-search mui-pull-right"></a>
+    <h1 class="mui-title">
+      <input type="text">
+    </h1>
+  </header>
+
+  <!-- 底部 -->
+  <footer class="lt-footer mui-bar mui-bar-tab">
+    <a class="mui-item " href="./index.html">
+      <i class="fa fa-home"></i>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-item mui-active" href="./sort.html">
+      <i class="fa fa-bars"></i>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-item" href="./cart.html">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-item" href="./center.html">
+      <i class="fa fa-user"></i>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </footer>
+  <!-- 内容区域 加回弹 -->
+  <main class="mui-content">
+    <!-- 左边 -->
+    <aside>
+      <!-- 一级分类 -->
+      <ul class="first-category">
+        <li class="active">
+          <a href="javascript:;">运动馆</a>
+        </li>
+        <li>
+          <a href="javascript:;">女士官</a>
+        </li>
+        <li>
+          <a href="javascript:;">男士馆</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- 右边 -->
+    <section class="mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <!-- 二级分类 -->
+        <div class="second-category">
+          <a href="javascript:;">
+            <img src="./images/brand1.png" alt="">
+
+          </a>
+          <a href="javascript:;">
+            <img src="./images/brand2.png" alt="">
+          </a>
+          <a href="javascript:;">
+            <img src="./images/brand3.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 加载中图标 -->
+  <i class="loading"></i>
+  <!-- 一级分类模板 -->
+  <script type="text/template" id="first-template">
+    <% for(var i = 0; i<rows.length;i++) {%>
+      <%if(i == 0) {%>
+        <li class="active"><a href="javascript:;" data-id="<%= rows[i].id %>"><%= rows[i].categoryName %></a></li>
+        <% }else {%>
+        <li><a href="javascript:;" data-id="<%= rows[i].id %>"><%= rows[i].categoryName %></a></li>
+        <%}%>
+        <%}%>
+  </script>
+
+  <!-- 二级分类模板 -->
+  <script type="text/template" id="second-template">
+
+    <%if(rows.length == 0) {%>
+      <p>该分类下没有数据</p>
+      <%}else {%>
+      <%for(var i = 0; i< rows.length;i++){%>
+        <a href="javascript:;" data-id="<%= rows[i].id%>"  data-categoryId="<%=rows[i].categoryId%>">
+            <img src="<%= rows[i].brandLogo%>" alt="">
+            <span><%= rows[i].brandName%></span>
+          </a>
+          <%}%>
+          <%}%>
+  </script>
+  <!-- 引入zepto库 现在引入的zepto有问题 zepto有touch MUI也有touch 最后我会把zepto中的touch删掉-->
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <!-- 引入MUI库  -js文件 -->
+  <script src="./lib/mui/js/mui.min.js"></script>
+  <!-- 引入模板引擎 -->
+  <script src="./lib/artTemplate/template-native.js"></script>
+  <!-- 引入公共js -->
+  <script src="./js/common.js"></script>
+  <!-- 引入本页面的js -->
+  <script src="./js/sort.js"></script>
+</body>
+
+</html>

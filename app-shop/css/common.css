@@ -1,0 +1,85 @@
+/* 头部 */
+.lt-header.mui-bar,.lt-footer.mui-bar {
+  background-color: #006699;
+ 
+}
+
+.lt-header.mui-bar .mui-title {
+  color: #fff;
+}
+
+.lt-header.mui-bar .mui-title input {
+  height: 30px;
+  color: #000;
+}
+
+.lt-header.mui-bar a {
+  line-height: 44px;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+/* 底部 */
+/* .lt-footer.mui-bar {} */
+
+.lt-footer.mui-bar .mui-item {
+  display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+} 
+
+.lt-footer.mui-bar .mui-item.mui-active {
+  color: orange;
+}
+
+.lt-footer.mui-bar i {
+  display: block;
+  font-size: 20px;
+  
+}
+
+.lt-footer.mui-bar span {
+  font-size: 14px;
+
+}
+
+
+/* 加载图标 */
+.loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0,0, 0.3);
+}
+
+.loading:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  border: 3px solid #006699;
+  animation:  rotation 1.5s ease-in-out infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

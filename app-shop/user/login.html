@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 设置ios系统下的顶部状态栏的背景颜色 -->
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <!-- 在ios系统中 如果出现类似于电话号码的数字 会出现蓝色的字  你想调节样式  忽略电话号码  = no  样式就没有了 这是你就可以设置了 -->
+  <meta content="telephone=no" name="format-detection">
+  <title>乐淘云购-登录</title>
+  <!-- 1.引入的库 MUI-css文件 -->
+  <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+  <!-- 2.引入字体图标库fontawesome -->
+  <link rel="stylesheet" href="../lib/fontAwesome/css/font-awesome.min.css">
+  <!-- 3.引入公共样式 -->
+  <link rel="stylesheet" href="../css/common.css">
+  <!-- 4.引入本页面的样式 -->
+  <link rel="stylesheet" href="../css/login.css">
+  <!-- 5.引入标签上的图标 -->
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="lt-header mui-bar mui-bar-nav">
+    <!--  mui-plus-visible -->
+    <a class="fa fa-arrow-left mui-pull-left" href="javascript:history.back();"></a>
+    <a href="./search/search.html" class="fa fa-search mui-pull-right  mui-plus-visible"></a>
+    <h1 class="mui-title">登录</h1>
+  </header>
+
+  <!-- 底部 -->
+  <footer class="lt-footer mui-bar mui-bar-tab">
+    <a class="mui-item " href="./index.html">
+      <i class="fa fa-home"></i>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-item" href="./sort.html">
+      <i class="fa fa-bars"></i>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-item" href="./cart.html">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-item mui-active" href="./center.html">
+      <i class="fa fa-user"></i>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </footer>
+  <!-- 内容区域 加回弹 -->
+  <main class="mui-content">
+    <!-- form表单 -->
+    <form id="form">
+      <div class="mui-input-row mui-username">
+        <input type="text" class="mui-input-username" name="username" placeholder="用户名/手机号">
+      </div>
+      <div class="mui-input-row mui-password">
+        <input type="password" class="mui-input-password" name="password" placeholder="密码">
+        <span class="mui-icon mui-icon-eye"></span>
+      </div>
+    </form>
+
+    <button type="button" class=" login-btn mui-btn mui-btn-primary mui-btn-block">登录</button>
+
+    <a class="register-btn" href="./register.html">免费注册</a>
+  </main>
+
+
+  <!-- 引入zepto库 现在引入的zepto有问题 zepto有touch MUI也有touch 最后我会把zepto中的touch删掉-->
+  <script src="../lib/zepto-notouch/zepto.min.js"></script>
+  <!-- 引入MUI库  -js文件 -->
+  <script src="../lib/mui/js/mui.min.js"></script>
+  <!-- 引入模板引擎 -->
+  <script src="../lib/artTemplate/template-native.js"></script>
+  <!-- 引入公共js -->
+  <script src="../js/common.js"></script>
+  <!-- 引入本页面的js -->
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+html,body,.mui-content {
+  height: 100%;
+}
+.mui-content {
+  padding-left:10px;
+  padding-right: 10px;
+  background-color: #fff;
+}
+
+.mui-content form {
+  margin-top: 15px;
+}
+
+.mui-content .mui-btn-block {
+  padding: 5px 0;
+}
+
+.mui-content .register-btn {
+  float: right;
+  margin-top: 15px;
+  font-size: 12px;
+}

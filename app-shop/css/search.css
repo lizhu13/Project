@@ -1,0 +1,223 @@
+.mui-content,body {
+  background-color: #fff;
+}
+/* 搜索中心 */
+.mui-content {
+  padding: 15px;
+}
+/* 搜索框 */
+.search-box {
+  margin: 15px 0;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding-right: 60px;
+  line-height: 30px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  padding-left: 10px;
+  border: 1px solid #006699;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-box a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height:30px;
+  text-align: center;
+  /* border: 1px solid #006699; */
+  border-left:none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #006699;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* 历史*/
+.history {
+  width: 100%;
+}
+
+.history-title {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.history-title p {
+  /* display: none; */
+  color: #666;
+}
+
+.history-title-manager {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.history-title-manager span:first-child {
+  float: left;
+}
+
+.history-title-manager span:last-child {
+  float: right;
+}
+
+.history-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.history-list li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border:1px solid #666;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.history-list li span {
+  float: left;
+}
+
+.history-list li i{
+  float: right;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
+/* 搜索结果页面 */
+.sort-search {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.sort {
+  width: 100%;
+  height: 30px;
+  background-color: #efeff4;
+}
+
+.sort ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sort li {
+  float: left;
+  width: 25%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.sort li.active a {
+  color: red;
+}
+
+.sort a {
+  color: #666;
+}
+
+
+
+.lt-sports {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.lt-sports-title img {
+  width: 100%;
+}
+
+.lt-sports-content {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.lt-sports-content .item-wrap {
+  float: left;
+  width: 50%;
+  padding: 0 4px;
+  margin-bottom: 10px;
+}
+
+.lt-sports-content .item {
+  display: block;
+  /* padding: 10px; */
+  background-color: #fff;
+  /* box-shadow:  0px 0px 2px rgba(0,0,0,0.5); */
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.lt-sports-content .item img {
+  width: 100%;
+}
+
+.lt-sports-content .item span {
+  /* display: block; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  color: #666;
+}
+
+.lt-sports-content .item b {
+  font-weight: normal;
+  font-size: 12px;
+  margin:  0 5px;
+  color:#ccc;
+  text-decoration: line-through;
+}
+
+.lt-sports-content .item b:nth-child(3) {
+  color: rgb(231, 49, 49);
+  text-decoration: none;
+}
+
+.lt-sports-content .item button {
+  display: block;
+  margin: 10px auto;
+  background: #006699;
+  color: #fff;
+  width: 82px;
+  height: 34px;
+}
+
+
+

@@ -1,0 +1,86 @@
+/* 商品详情页 */
+
+
+/* 底部 */
+.lt-footer.mui-bar {
+  background-color: #e6e6e6;
+  display: flex;
+  box-shadow: none;
+  border-top: 1px solid #ccc;
+
+}
+
+.lt-footer.mui-bar a {
+  display: inline-block;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+.lt-footer.mui-bar button {
+  height: 40px; 
+  flex: 1;
+  margin: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.lt-footer.mui-bar button.add-cart {
+ background-color: #991020;
+}
+.lt-footer.mui-bar button.buy-now {
+  background-color: #fa672d;
+}
+
+/* 内容区域 */
+
+/* 商品名称 */
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .proname {
+  padding: 15px 5px;
+  color: #333;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mui-content .price {
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mui-content .price span.new {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ea543d;
+}
+
+.mui-content .price span.old {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.mui-content .size {
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mui-content .size span {
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 2px 3px;
+  border: 1px solid #ccc;
+}
+
+.mui-content .size span.active {
+  background-color: #fa672d;
+  color: #fff;
+}
+
+.mui-content .count {
+  padding: 10px 5px;
+}
